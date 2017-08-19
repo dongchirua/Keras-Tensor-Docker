@@ -13,6 +13,8 @@ endif
 ifndef $(DATA)
 	DATA?=${HOME}/Data
 endif
+
+GPU?=0
 ifeq ($(GPU), 0)
 	DOCKER=docker
 else
